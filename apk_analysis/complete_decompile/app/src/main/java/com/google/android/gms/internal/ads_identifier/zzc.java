@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads_identifier;
+
+import android.os.Parcel;
+
+/* loaded from: classes.dex */
+public final class zzc {
+    static {
+        zzc.class.getClassLoader();
+    }
+
+    public static void zza(Parcel parcel, boolean z) {
+        parcel.writeInt(1);
+    }
+
+    public static boolean zzb(Parcel parcel) {
+        if (parcel.readInt() != 0) {
+            return true;
+        }
+        return false;
+    }
+}

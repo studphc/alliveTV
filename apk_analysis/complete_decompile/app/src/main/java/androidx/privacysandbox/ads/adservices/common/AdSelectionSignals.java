@@ -1,0 +1,57 @@
+package androidx.privacysandbox.ads.adservices.common;
+
+import android.annotation.SuppressLint;
+import androidx.annotation.RequiresExtension;
+import androidx.annotation.RestrictTo;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+@Metadata(m5568d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u001a\u0010\b\u001a\u00020\u00072\b\u0010\u0006\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\b\u0010\tJ\u000f\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u000f\u0010\u0012\u001a\u00020\u000fH\u0001¢\u0006\u0004\b\u0010\u0010\u0011R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u000e¨\u0006\u0016"}, m5569d2 = {"Landroidx/privacysandbox/ads/adservices/common/AdSelectionSignals;", "", "", "signals", "<init>", "(Ljava/lang/String;)V", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "toString", "()Ljava/lang/String;", "Landroid/adservices/common/AdSelectionSignals;", "convertToAdServices$ads_adservices_release", "()Landroid/adservices/common/AdSelectionSignals;", "convertToAdServices", "a", "Ljava/lang/String;", "getSignals", "ads-adservices_release"}, m5570k = 1, m5571mv = {1, 8, 0}, m5573xi = 48)
+@SuppressLint({"ClassVerificationFailure"})
+/* loaded from: classes.dex */
+public final class AdSelectionSignals {
+
+    /* renamed from: a, reason: from kotlin metadata */
+    public final String signals;
+
+    public AdSelectionSignals(@NotNull String signals) {
+        Intrinsics.checkNotNullParameter(signals, "signals");
+        this.signals = signals;
+    }
+
+    @RequiresExtension.Container({@RequiresExtension(extension = 1000000, version = 4), @RequiresExtension(extension = 31, version = 9)})
+    @RestrictTo({RestrictTo.Scope.LIBRARY})
+    @NotNull
+    public final android.adservices.common.AdSelectionSignals convertToAdServices$ads_adservices_release() {
+        android.adservices.common.AdSelectionSignals fromString;
+        fromString = android.adservices.common.AdSelectionSignals.fromString(this.signals);
+        Intrinsics.checkNotNullExpressionValue(fromString, "fromString(signals)");
+        return fromString;
+    }
+
+    public boolean equals(@Nullable Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof AdSelectionSignals)) {
+            return false;
+        }
+        return Intrinsics.areEqual(this.signals, ((AdSelectionSignals) other).signals);
+    }
+
+    @NotNull
+    public final String getSignals() {
+        return this.signals;
+    }
+
+    public int hashCode() {
+        return this.signals.hashCode();
+    }
+
+    @NotNull
+    public String toString() {
+        return "AdSelectionSignals: " + this.signals;
+    }
+}

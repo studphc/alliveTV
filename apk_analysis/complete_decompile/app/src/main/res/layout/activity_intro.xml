@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:launchMode="singleTop"
+    android:screenOrientation="landscape"
+    android:configChanges="orientation|navigation|keyboardHidden|keyboard"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/allivetv_badge"/>
+    </LinearLayout>
+</FrameLayout>

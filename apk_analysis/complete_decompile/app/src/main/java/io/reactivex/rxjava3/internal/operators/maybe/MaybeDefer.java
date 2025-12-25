@@ -1,0 +1,32 @@
+package io.reactivex.rxjava3.internal.operators.maybe;
+
+import io.reactivex.rxjava3.core.Maybe;
+import io.reactivex.rxjava3.core.MaybeObserver;
+import io.reactivex.rxjava3.core.MaybeSource;
+import io.reactivex.rxjava3.exceptions.Exceptions;
+import io.reactivex.rxjava3.functions.Supplier;
+import io.reactivex.rxjava3.internal.disposables.EmptyDisposable;
+import java.util.Objects;
+
+/* loaded from: classes2.dex */
+public final class MaybeDefer<T> extends Maybe<T> {
+
+    /* renamed from: a */
+    public final Supplier f19131a;
+
+    public MaybeDefer(Supplier<? extends MaybeSource<? extends T>> supplier) {
+        this.f19131a = supplier;
+    }
+
+    @Override // io.reactivex.rxjava3.core.Maybe
+    public void subscribeActual(MaybeObserver<? super T> maybeObserver) {
+        try {
+            Object obj = this.f19131a.get();
+            Objects.requireNonNull(obj, "The maybeSupplier returned a null MaybeSource");
+            ((MaybeSource) obj).subscribe(maybeObserver);
+        } catch (Throwable th) {
+            Exceptions.throwIfFatal(th);
+            EmptyDisposable.error(th, maybeObserver);
+        }
+    }
+}

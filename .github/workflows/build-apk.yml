@@ -53,7 +53,7 @@ jobs:
           app/build/outputs/apk/release/app-release-aligned.apk
     
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: allive-v4.6-revival
         path: apk_analysis/complete_decompile/app/build/outputs/apk/release/allive-v4.6-revival.apk

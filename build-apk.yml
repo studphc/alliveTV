@@ -30,7 +30,9 @@ jobs:
     - name: Build Release APK
       run: |
         cd apk_analysis/complete_decompile
-        ./gradlew assembleRelease --no-daemon
+        ./gradlew assembleRelease --no-daemon --stacktrace
+      env:
+        GRADLE_OPTS: "-Dorg.gradle.jvmargs='--add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED'"
         
     - name: Sign APK
       run: |

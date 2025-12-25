@@ -62,7 +62,7 @@ public class SnsLoginDialogFragment extends DialogFragment {
         this.f15950u0.setFocusable(true);
         this.f15950u0.setFocusableInTouchMode(true);
         this.f15950u0.requestFocus(TsExtractor.TS_STREAM_TYPE_HDMV_DTS);
-        this.f15950u0.loadUrl("https://user.tving.com/oauth/oauthLogin.tving?target=naver&from=pc&rtUrl=https://www.tving.com/main.do?retRef=Y&source=https://user.tving.com/&csite=&isAuto=false");
+        this.f15950u0.loadUrl("https://www.wavve.com/member/login");
         AlertDialog create = new AlertDialog.Builder(getActivity(), 2131951929).setTitle(getResources().getString(R.string.snslogin_title)).setView(inflate).setNegativeButton(android.R.string.cancel, new zk2(this, 0)).create();
         create.setOnCancelListener(new t30(2, this));
         return create;

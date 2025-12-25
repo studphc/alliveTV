@@ -21,8 +21,8 @@ public final class C1091y extends WebViewClient {
     public final boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest) {
         SnsLoginDialogFragment.OnResultListener onResultListener;
         String uri = webResourceRequest.getUrl().toString();
-        if (uri.contains("https://www.tving.com")) {
-            String cookie = CookieManager.getInstance().getCookie("https://www.tving.com/");
+        if (uri.contains("https://www.wavve.com")) {
+            String cookie = CookieManager.getInstance().getCookie("https://www.wavve.com/");
             SnsLoginDialogFragment snsLoginDialogFragment = this.f16021a;
             if (cookie != null && (onResultListener = snsLoginDialogFragment.f15951v0) != null) {
                 onResultListener.onResult(cookie);

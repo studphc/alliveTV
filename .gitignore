@@ -1,0 +1,46 @@
+# Allive TV Revival Project - .gitignore
+
+# ===== Build Outputs =====
+*.apk
+*.aab
+*.dex
+*.class
+*.jar
+!gradle-wrapper.jar
+
+# ===== Decompilation Tools =====
+jadx/
+jadx-*.zip
+apktool/
+apktool-*.jar
+
+# ===== Temporary Analysis Files =====
+*_decompiled/
+*_extracted/
+*_xapk/
+*_apkm/
+*.log
+decompile.log
+
+# ===== IDE & Gradle =====
+.idea/
+.gradle/
+build/
+local.properties
+*.iml
+*.swp
+*~
+
+# ===== System Files =====
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# ===== Git Maintenance =====
+.git/gc.log
+
+# ===== Keep Essential Files =====
+!apk_analysis/complete_decompile/
+!official_apk_analysis/FINAL_SOLUTION_GUIDE.md
+!official_apk_analysis/README.md

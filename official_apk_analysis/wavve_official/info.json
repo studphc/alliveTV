@@ -1,0 +1,49 @@
+{
+    "apkm_version": 5,
+    "apk_title": "Wavve (\uc6e8\uc774\ube0c) (Android TV) 7.2.20 (noarch) (320dpi)",
+    "app_name": "Wavve (\uc6e8\uc774\ube0c) (Android TV)",
+    "release_version": "7.2.20",
+    "variant": "(320dpi) (Android 5.0+)",
+    "release_title": "Wavve (\uc6e8\uc774\ube0c) (Android TV) 7.2.20 (noarch) (320dpi)",
+    "versioncode": "2025120201",
+    "pname": "kr.co.captv.pooq.tv",
+    "post_date": "2025-12-05 00:35:48",
+    "capabilities": [
+        "leanback",
+        "leanback_standalone"
+    ],
+    "languages": [
+        "ar",
+        "de",
+        "en",
+        "es",
+        "et",
+        "fi",
+        "fr",
+        "hi",
+        "hu",
+        "in",
+        "it",
+        "ja",
+        "ko",
+        "ms",
+        "nl",
+        "pl",
+        "pt",
+        "ru",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+        "zh"
+    ],
+    "arches": [],
+    "dpis": [
+        "320"
+    ],
+    "min_api": "21",
+    "accent_color": "0050ff",
+    "apk_id": 11714628,
+    "release_id": 11714629
+}

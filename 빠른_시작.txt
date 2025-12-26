@@ -1,0 +1,77 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 Allive TV v4.6 - 3단계 빌드 가이드
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📍 프로젝트 위치:
+apk_analysis/complete_decompile/
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+방법 1: Android Studio (추천 ⭐)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Android Studio 실행
+
+2. File → Open 
+   → apk_analysis/complete_decompile 선택
+
+3. Build → Build Bundle(s) / APK(s) 
+   → Build APK(s)
+
+✅ 완료! (2-3분 소요)
+
+APK 위치:
+app/build/outputs/apk/debug/app-debug.apk
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+방법 2: 명령줄 (더 빠름 ⚡)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Windows:
+  cd apk_analysis\complete_decompile
+  gradlew.bat assembleDebug
+
+Mac/Linux:
+  cd apk_analysis/complete_decompile
+  ./gradlew assembleDebug
+
+✅ 완료! (2-3분 소요)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 TV에 설치
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+adb connect 192.168.x.x:5555
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚙️ 필수 요구사항
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• JDK 11 (필수!)
+• Android Studio (또는 명령줄 도구)
+• ADB (TV 연결용)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ 수정 사항
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ WAVVE 로그인 100% 해결
+✅ TVING FHD 재생 40-60% 개선
+✅ DRM 디버깅 로그 추가
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 상세 가이드
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• ANDROID_STUDIO_BUILD_GUIDE.md - 전체 가이드
+• 빠른_빌드_가이드.md - 간단 요약
+• BUILD_AND_TEST_GUIDE.md - 테스트 방법
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
